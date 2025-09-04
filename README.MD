@@ -85,9 +85,10 @@ npm start
 ---
 
 ## 📸 Screenshots
-
-(Add screenshots or GIFs of your app here)  
+ 
 Example:  
+![screenshot0.1](public/images/ss0.1.png)
+![screenshot0.2](public/images/ss0.2.png)
 ![screenshot1](public/images/ss1.png)
 ![screenshot2](public/images/ss2.png)
 ![screenshot3](public/images/ss3.png)
