@@ -1,0 +1,48 @@
+<%- include('../../partials/header') %>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh; background:#f8f9fa;">
+  <div class="card shadow-lg border-0 rounded-4 p-5" style="max-width: 600px; width: 100%;">
+    
+    <!-- Heading -->
+    <h2 class="fw-bold text-center text-primary mb-2">Edit Profile</h2>
+    <p class="text-center text-muted mb-4">Update your personal information below</p>
+
+    <!-- Form -->
+    <form action="/user/profile/edit" method="POST" enctype="multipart/form-data">
+      
+      <!-- Name -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Full Name</label>
+        <input type="text" name="name" class="form-control rounded-3 shadow-sm border-0" 
+               value="<%= user.name %>" required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Email</label>
+        <input type="email" name="email" class="form-control rounded-3 shadow-sm border-0" 
+               value="<%= user.email %>" required>
+      </div>
+
+      <!-- Avatar -->
+      <div class="mb-3 text-center">
+        <label class="form-label fw-semibold d-block">Profile Picture</label>
+        <% if (user.avatar) { %>
+          <div class="mb-3">
+            <img src="<%= user.avatar %>" alt="Profile Avatar" 
+                 class="rounded-circle shadow-sm border" width="100" height="100">
+          </div>
+        <% } %>
+        <input type="file" name="avatar" class="form-control rounded-3 shadow-sm border-0">
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex justify-content-between mt-4">
+        <a href="/user/profile" class="btn btn-outline-secondary rounded-3 px-4">Cancel</a>
+        <button type="submit" class="btn btn-primary rounded-3 px-4 shadow">Update</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+<%- include('../../partials/footer') %>

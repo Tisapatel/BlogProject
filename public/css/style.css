@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* navbar */
+
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: #0d6efd; /* bootstrap primary color */
+}
+
+
+/*  Hero Section */
+.card-img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-img-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+
+.footer .btn-outline-dark {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer .form-control {
+  max-width: 250px;
+}

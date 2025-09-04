@@ -1,0 +1,62 @@
+<%- include("../partials/header") %>
+
+<div class="container my-5">
+  <div class="row justify-content-center align-items-center shadow-sm rounded-4"
+    style="border: 1px solid #e0e0e0; overflow: hidden;">
+
+    <!-- Left: Form -->
+    <div class="col-lg-6 p-5 bg-white">
+      <h2 class="mb-4 fw-bold text-primary text-center">Create a New Blog</h2>
+      <form action="/blog/add" method="POST" enctype="multipart/form-data">
+        
+        <!-- Blog Title -->
+        <div class="mb-3">
+          <label for="title" class="form-label fw-semibold">Blog Title</label>
+          <input type="text" name="title" id="title" class="form-control rounded-3"
+            placeholder="Enter blog title" required>
+        </div>
+
+        <!-- Blog Content -->
+        <div class="mb-3">
+          <label for="content" class="form-label fw-semibold">Blog Content</label>
+          <textarea name="content" id="content" rows="6" class="form-control rounded-3"
+            placeholder="Write your blog here..." required></textarea>
+        </div>
+
+        <!-- Blog Image -->
+        <div class="mb-3">
+          <label for="image" class="form-label fw-semibold">Upload Blog Image</label>
+          <input type="file" name="image" id="image" class="form-control rounded-3" accept="image/*">
+        </div>
+
+        <!-- Author Name -->
+        <div class="mb-3">
+          <label for="authorName" class="form-label fw-semibold">Your Name</label>
+          <input type="text" name="authorName" id="authorName" class="form-control rounded-3"
+            placeholder="Enter your name">
+        </div>
+
+        <!-- Author Profile Image -->
+        <div class="mb-3">
+          <label for="authorImage" class="form-label fw-semibold">Profile Image</label>
+          <input type="file" name="authorImage" id="authorImage" class="form-control rounded-3" accept="image/*">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-grid mt-4">
+          <button type="submit" class="btn btn-primary rounded-3 shadow-sm py-2">
+            Publish Blog
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Right: Background / Illustration -->
+    <div class="col-lg-6 d-none d-lg-block"
+      style="background: url('/images/addfrom.png') center/cover no-repeat; min-height: 500px;">
+    </div>
+
+  </div>
+</div>
+
+<%- include("../partials/footer") %>
