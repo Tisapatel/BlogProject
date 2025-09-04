@@ -88,7 +88,12 @@ npm start
 
 (Add screenshots or GIFs of your app here)  
 Example:  
-![Blog Dashboard](https://via.placeholder.com/800x400.png?text=Blog+Dashboard)
+![screenshot1](public/images/ss1.png)
+![screenshot2](public/images/ss2.png)
+![screenshot3](public/images/ss3.png)
+![screenshot4](public/images/ss4.png)
+
+
 
 ---
 
